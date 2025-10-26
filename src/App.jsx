@@ -1,16 +1,12 @@
 import "./App.css";
-import ProfileImage from "./components/ProfileImage";
-import ProfileInformation from "./components/ProfileInformation";
-import Hobbies from "./components/Hobbies";
-import WelcomeMessage from "./components/WelcomeMessage";
-import Button from "./components/Button";
+import Count from "./components/Count";
 
 function App() {
 
 
   return (
     <>
-      <Button/>
+      <Count/>
     </>
   );
 }
