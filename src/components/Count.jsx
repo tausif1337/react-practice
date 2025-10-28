@@ -1,15 +1,11 @@
-import { useEffect } from "react"; // import the useState hook
+import { useState } from "react";
 
 export default function Count(){
-    useEffect(() => {
-       fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
-    
-    }, []);
+    const [count, setCount] = useState(0);
+   
     return(
         <div>
+            <button onClick={() => setCount(count + 1)}>Count: {count}</button>
         </div>
     )
 }
